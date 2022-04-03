@@ -21,11 +21,11 @@ const ItemList = (event) => {
         var tempUser = []
         var tempVendor = []
 
-        var respUser = await axios.get("http://localhost:4000/BuyerMenu/menu")
+        var respUser = await axios.get("/api/BuyerMenu/menu")
         // console.log(respUser)
         tempUser = await respUser.data
 
-        var respVendor = await axios.get("http://localhost:4000/BuyerMenu/getshopName")
+        var respVendor = await axios.get("/api/BuyerMenu/getshopName")
         tempVendor = await respVendor.data
 
         tempUser.map((us, ind) => {

@@ -53,7 +53,7 @@ const Register = (props) => {
     };
 
     axios
-      .post("http://localhost:4000/vendor/signup", newUser)
+      .post("/api/vendor/signup", newUser)
       .then((response) => {
         alert("Created\t" + response.data.managerName);
         console.log(response.data);

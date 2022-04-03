@@ -33,12 +33,12 @@ const VendorStats = (props) => {
         }
        
         axios
-            .post("http://localhost:4000/BuyerMenu/top", data)
+            .post("/api/BuyerMenu/top", data)
             .then((response) => {
                 Setitems(response.data.slice(0, 5));
             });
         axios
-            .post("http://localhost:4000/BuyerMenu/stat", data)
+            .post("/api/BuyerMenu/stat", data)
             .then((response) => {
                 Setstats(response.data);
             });

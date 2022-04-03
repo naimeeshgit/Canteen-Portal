@@ -30,7 +30,7 @@ const BuyItemInMenu = () => {
     console.log(item);
 
     axios
-      .post("http://localhost:4000/BuyerMenu/rate", item)
+      .post("/api/BuyerMenu/rate", item)
       .then((response) => {
 
         alert("rated\t" + response.data.FoodName);

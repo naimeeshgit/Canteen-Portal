@@ -32,7 +32,7 @@ const BuyItemInMenu = () => {
     console.log(item);
 
     axios
-      .post("http://localhost:4000/BuyerMenu/placeorder", item)
+      .post("/api/BuyerMenu/placeorder", item)
       .then((response) => {
 
         // if response == 400 then alert error

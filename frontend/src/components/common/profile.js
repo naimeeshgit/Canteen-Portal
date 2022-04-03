@@ -69,7 +69,7 @@ const Register = (props) => {
     console.log(newUser);
 
     axios
-      .put("http://localhost:4000/buyer/edit", newUser)
+      .put("/api/buyer/edit", newUser)
       .then((response) => {
         alert("Created\t" + response.data.name);
         localStorage.setItem("name", response.data.name);

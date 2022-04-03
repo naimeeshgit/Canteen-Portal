@@ -28,7 +28,7 @@ const UsersList = (props) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/buyer")
+      .get("/api/buyer")
       .then((response) => {
         setUsers(response.data);
         setSortedUsers(response.data);

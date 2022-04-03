@@ -18,7 +18,7 @@ const Register = (props) => {
 
 
         axios
-            .post("http://localhost:4000/buyer/checkbalance", checkbal)
+            .post("/api/buyer/checkbalance", checkbal)
             .then((response) => {
                 console.log(response.data);
                 // return response.data.wallet;
@@ -42,7 +42,7 @@ const Register = (props) => {
         };
 
         axios
-            .post("http://localhost:4000/buyer/addmoney", Money)
+            .post("/api/buyer/addmoney", Money)
             .then((response) => {
                 alert("Added \t" + wallet + "\t Rupees into your account");
                 console.log(response.data);

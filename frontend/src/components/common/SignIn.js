@@ -66,7 +66,7 @@ export default function SignInSide() {
     // localStorage.setItem("password", password);
 
     axios
-      .post("http://localhost:4000/buyer/login", UserLogin)
+      .post("/api/buyer/login", UserLogin)
       .then((response) => {
        
 

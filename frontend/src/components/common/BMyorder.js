@@ -23,7 +23,7 @@ const ItemList = (props) => {
 
 
     axios
-      .post("http://localhost:4000/BuyerMenu/BgetOrder", BuyerEmail)
+      .post("/api/BuyerMenu/BgetOrder", BuyerEmail)
       .then((response) => {
         setUsers(response.data);
 

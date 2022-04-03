@@ -30,7 +30,7 @@ const ItemList = (props) => {
 
 
     axios
-      .post("http://localhost:4000/item/getItem", VendorEmail)
+      .post("/api/item/getItem", VendorEmail)
       .then((response) => {
         setUsers(response.data);
 
@@ -116,7 +116,7 @@ const ItemList = (props) => {
     console.log(newItem);
 
     axios
-      .put("http://localhost:4000/item/edit", newItem)
+      .put("/api/item/edit", newItem)
       .then((response) => {
         alert("Edited\t" + response.data.FoodName);
         setBool(!bool);
@@ -188,7 +188,7 @@ const ItemList = (props) => {
     console.log(newItem);
 
     axios
-      .post("http://localhost:4000/item/delete", newItem)
+      .post("/api/item/delete", newItem)
       .then((response) => {
         alert("Deleted\t");
         console.log("neeche dekh:");

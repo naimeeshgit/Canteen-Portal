@@ -2,6 +2,8 @@
 
 Features:
 
+- the WebApp is dockerized and can be  deployed locally on a url.The backend is hosted at /api and the frontend is hosted at /
+
 ##### FOR VENDOR
 - lets a vendor register/login into the portal
 - vendor can list down the food menu he/she/they sell
@@ -50,5 +52,4 @@ npm install/
 npm start
 ```
 
-Navigate to [http://localhost:3000/](http://localhost:3000/) in your browser.
 

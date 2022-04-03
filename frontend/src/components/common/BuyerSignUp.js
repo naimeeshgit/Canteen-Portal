@@ -66,7 +66,7 @@ const Register = (props) => {
     };
 
     axios
-      .post("http://localhost:4000/buyer/signup", newUser)
+      .post("/api/buyer/signup", newUser)
       .then((response) => {
         alert("Created\t" + response.data.name);
         console.log(response.data);

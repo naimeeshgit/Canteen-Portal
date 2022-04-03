@@ -18,7 +18,7 @@ const NextStage = () => {
     }
     console.log(it);
     axios
-      .post("http://localhost:4000/BuyerMenu/nextStage", it)
+      .post("/api/BuyerMenu/nextStage", it)
       .then((response) => {
 
         alert("Done , now redirecting");

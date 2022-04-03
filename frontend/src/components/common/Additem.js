@@ -76,7 +76,7 @@ const onAddItem = async (event) => {
 
     console.log(newItem);
 
-    const resp = await axios.post("http://localhost:4000/item/add", newItem)
+    const resp = await axios.post("/api/item/add", newItem)
       
     alert("added")
     setBool(!bool);

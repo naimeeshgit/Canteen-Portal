@@ -25,7 +25,7 @@ const ItemList = (props) => {
 
 
     axios
-      .post("http://localhost:4000/BuyerMenu/VgetOrder", VendorEmail)
+      .post("/api/BuyerMenu/VgetOrder", VendorEmail)
       .then((response) => {
         setUsers(response.data);
 
